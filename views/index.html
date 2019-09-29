@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Specialized Bikes</title>
+    <title>Specialized Bicycles</title>
 
     <!-- links - stylesheets -->
     <link rel="stylesheet" href="../public/css/main.css">
@@ -12,19 +12,25 @@
     <!-- links - fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/tqj4lgp.css">
 
+    <!-- links - Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.css">
 </head>
+
 <body>
     <!-- header starts -->
     <header>
         <h1 class="hidden">Header starts</h1>
-        <div>
+
+        <!-- logo header -->
+        <div class="logoHeader">
             <img src="../public/images/sp_logo_white.png" alt="Specialized Logo">
         </div>
 
         <!-- menu starts -->
         <nav id="mainNav">
-            <h2 class="hide">Main Navigation</h2>
+            <h2 class="hidden">Main Navigation</h2>
             <button id="button"></button>
+            
             
             <!-- menu content -->
              <div id="burgerCon">
@@ -36,7 +42,7 @@
                 </ul>
 
             <!-- menu icons -->
-            <div>
+            <div id="menuIcons">
                 <!-- search icon -->
                 <div>
                     <img src="../public/images/search-solid.svg" alt="Search icon">
@@ -52,15 +58,20 @@
     <section>
         <h1 class="hidden">Hero Section</h1>
 
+        <!-- hero heading -->
+        <div id="heroHeading">
+            <h1>MIXTAPE</h1>
+        </div>
+
         <!-- hero mixtape img -->
-        <div>
+        <div id="heroImage">
             <img src="../public/images/mixtape_hero.png" alt="Specialized Stumjumper Mixtape 2019">
         </div>
 
         <!-- hero buttons -->
-        <div>
-            <button>LEARN MORE</button>
-            <button>SHOP NOW</button>
+        <div id="buttonsHero">
+            <button id="learnMore">LEARN MORE</button>
+            <button id="shopNow">SHOP NOW</button>
         </div>
     </section>
     <script src="../public/js/main.js"></script>
