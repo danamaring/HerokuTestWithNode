@@ -44,10 +44,8 @@ body {
   transition: all 400ms ease; }
 
 #mainNav button.expanded {
-  /*  browser prefixes for transform*/
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  /*default transform*/
   transform: rotate(90deg); }
 
 #mainNav li a {
@@ -58,9 +56,6 @@ body {
 
 #mainNav li {
   border-bottom: 1px solid #efefef; }
-
-#mainNav li:first-child {
-  border-top: 1px solid #efefef; }
 
 #mainNAv li:last-child {
   margin-bottom: 10px; }
@@ -79,6 +74,17 @@ body {
   margin-left: 5%;
   margin-top: 57%; }
 
+#heroText p {
+  font-family: poppins,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .4em;
+  color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 81%;
+  width: 58%; }
+
 #heroImage img {
   width: 90%;
   height: auto;
@@ -87,8 +93,8 @@ body {
 
 #buttonsHero {
   display: flex;
-  flex-direction: column;
-  margin: 7%; }
+  flex-direction: row;
+  margin-top: 33%; }
 
 #learnMore {
   padding: .4em;
@@ -98,8 +104,8 @@ body {
   color: white;
   font-size: 0.9em;
   background-color: transparent;
-  width: 41%;
-  margin-left: 30%;
+  width: 30%;
+  margin-left: 15%;
   margin-top: 17%;
   font-family: din-condensed, sans-serif;
   font-weight: 400; }
@@ -112,10 +118,131 @@ body {
   color: black;
   font-size: 0.9em;
   background-color: #007d55;
-  width: 41%;
-  margin-left: 30%;
-  margin-top: 10%;
+  width: 30%;
+  margin-top: 17%;
   font-family: din-condensed, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-left: 10%;
+  height: auto; }
+
+#copyrightsFooter h3 {
+  font-family: poppins,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .4em;
+  color: white;
+  margin-top: 30%;
+  text-align: center; }
+
+#socialMediaFooter {
+  display: none; }
+
+@media screen and (min-width: 64em) {
+  body {
+    background-image: url("../images/bcg_mobile_1V.gif");
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+
+  .logoHeader img {
+    width: 9%;
+    margin-top: 1%; }
+
+  #mainHeader {
+    display: flex;
+    margin-top: 5%; }
+
+  #button {
+    display: none; }
+
+  #burgerCon {
+    display: flex;
+    flex-direction: column;
+    margin: 0; }
+
+  #mainNav {
+    text-align: right;
+    font-size: 0.875em;
+    margin-left: auto; }
+
+  #burgerMenu {
+    margin-top: 5%;
+    margin-right: 21%; }
+
+  #mainNav li {
+    display: inline;
+    margin-left: 20px;
+    border-bottom: none; }
+
+  #mainNav li a {
+    display: inline;
+    padding: 0 2.5%;
+    text-decoration: none;
+    color: white;
+    font-family: din-condensed, sans-serif; }
+
+  #menuIcons {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: -7%; }
+
+  #menuIcons img {
+    width: 2%;
+    padding: 2%; }
+
+  #menuIcons img:first-child {
+    margin-left: 85%; }
+
+  #heroImage img {
+    margin: 5% 0 0 0%;
+    width: 70%; }
+
+  #heroText p {
+    margin: 7% 0 0 65%;
+    width: 13%; }
+
+  #buttonsHero {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0; }
+
+  #learnMore {
+    width: 13%;
+    margin-left: 84%;
+    margin-top: -19%; }
+
+  #shopNow {
+    width: 13%;
+    margin-top: 3%;
+    margin-left: 84%; }
+
+  #copyrightsFooter h3 {
+    margin-top: 4%;
+    text-align: left;
+    margin-left: 4%; }
+
+  #heroHeading h1 {
+    margin-left: -9%;
+    margin-top: 22%;
+    font-size: 7em;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg); }
+
+  #socialMediaFooter {
+    display: flex;
+    flex-direction: row;
+    margin-top: -5%; }
+
+  #socialMediaFooter img {
+    width: 1.5%;
+    padding: 1.5%; }
+
+  #socialMediaFooter img:first-child {
+    margin-left: 80%; } }
 
 /*# sourceMappingURL=main.css.map */
