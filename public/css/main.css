@@ -12,9 +12,10 @@ body {
   background-position: center center; }
 
 .logoHeader img {
-  width: 22%;
+  width: 96px;
   float: left;
-  margin: 3% 0 0 0; }
+  margin: 3% 0 0 0;
+  cursor: pointer; }
 
 #button {
   background-image: url("../images/bars-solid.svg");
@@ -25,7 +26,9 @@ body {
 #mainNav {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px; }
+  margin-bottom: 5%;
+  position: relative;
+  filter: drop-shadow(0 0 0.75rem black); }
 
 #mainNav button {
   margin-left: auto; }
@@ -35,7 +38,8 @@ body {
   margin-top: 20px; }
 
 #burgerCon.slideToggle {
-  display: block; }
+  display: block;
+  background-color: black; }
 
 #mainNav button {
   border: 0;
@@ -50,18 +54,30 @@ body {
 
 #mainNav li a {
   display: block;
-  color: #8ea76d;
-  padding: 10px 0;
-  text-align: center; }
+  color: white;
+  text-align: left;
+  margin: 5% 0;
+  font-family: din-condensed, sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer; }
 
-#mainNav li {
-  border-bottom: 1px solid #efefef; }
+#burgerMenu li a:hover {
+  color: #007d55;
+  transition: all 200ms ease-in-out; }
 
-#mainNAv li:last-child {
-  margin-bottom: 10px; }
+#socialMediaHeader {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40%;
+  margin-bottom: 5%; }
 
-#mainNav li a:hover {
-  background-color: #efefef; }
+#socialMediaHeader img {
+  width: 4.5%;
+  padding: 3.5%; }
+
+#socialMediaHeader img:first-child {
+  margin-left: 12%; }
 
 #menuIcons {
   display: none; }
@@ -108,7 +124,13 @@ body {
   margin-left: 15%;
   margin-top: 17%;
   font-family: din-condensed, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  cursor: pointer; }
+
+#learnMore:hover,
+#learnMore:focus {
+  transform: translateY(-0.25em);
+  transition: all 400ms ease; }
 
 #shopNow {
   padding: .4em;
@@ -123,20 +145,104 @@ body {
   font-family: din-condensed, sans-serif;
   font-weight: 400;
   margin-left: 10%;
-  height: auto; }
+  height: auto;
+  cursor: pointer; }
+
+#shopNow:hover,
+#shopNow:focus {
+  transform: translateY(-0.25em);
+  transition: all 400ms ease; }
 
 #copyrightsFooter h3 {
   font-family: poppins,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: .4em;
-  color: white;
-  margin-top: 30%;
+  color: rgba(255, 255, 255, 0.15);
+  margin-top: 11%;
   text-align: center; }
 
 #socialMediaFooter {
   display: none; }
 
+@media screen and (min-width: 29.375em) {
+  #heroImage img {
+    margin: 14% 0 0 4%; }
+
+  #learnMore {
+    width: 26%;
+    margin-left: 19%; }
+
+  #shopNow {
+    width: 26%; }
+
+  #buttonsHero {
+    margin-top: 28%; }
+
+  #heroHeading h1 {
+    margin-top: 62%; }
+
+  #heroText p {
+    font-size: 0.8em; }
+
+  #copyrightsFooter h3 {
+    margin-top: 11%; } }
+@media screen and (min-width: 32.125em) {
+  #heroHeading h1 {
+    margin-top: 65%; } }
+@media screen and (min-width: 38.125em) {
+  #heroHeading h1 {
+    margin-top: 66%; }
+
+  #heroText p {
+    width: 47%; }
+
+  #learnMore {
+    width: 23%;
+    margin-left: 22%; }
+
+  #shopNow {
+    width: 23%; } }
+@media screen and (min-width: 43.125em) {
+  #heroHeading h1 {
+    margin-top: 67%;
+    margin-left: 8%;
+    font-size: 6em; }
+
+  #heroText p {
+    width: 41%;
+    margin-left: 9%;
+    margin-top: 86%; }
+
+  #learnMore {
+    width: 19%;
+    margin-left: 27%; }
+
+  #shopNow {
+    width: 19%; }
+
+  #copyrightsFooter h3 {
+    margin-top: 7%; } }
+@media screen and (min-width: 52.5em) {
+  .logoHeader img {
+    width: 15%; }
+
+  #heroHeading h1 {
+    margin-top: 64%; }
+
+  #heroText p {
+    width: 34%;
+    margin-top: 76%; }
+
+  #learnMore {
+    width: 16%;
+    margin-left: 29%; }
+
+  #shopNow {
+    width: 16%; }
+
+  #buttonsHero {
+    margin-top: 11%; } }
 @media screen and (min-width: 64em) {
   body {
     background-image: url("../images/bcg_mobile_1V.gif");
@@ -146,7 +252,7 @@ body {
     background-position: center center; }
 
   .logoHeader img {
-    width: 9%;
+    width: 96px;
     margin-top: 1%; }
 
   #mainHeader {
@@ -164,7 +270,8 @@ body {
   #mainNav {
     text-align: right;
     font-size: 0.875em;
-    margin-left: auto; }
+    margin-left: auto;
+    background-color: transparent; }
 
   #burgerMenu {
     margin-top: 5%;
@@ -185,15 +292,18 @@ body {
   #menuIcons {
     display: flex;
     flex-direction: row;
-    position: relative;
-    margin-top: -7%; }
+    margin-top: -10%; }
 
   #menuIcons img {
     width: 2%;
-    padding: 2%; }
+    padding: 2%;
+    cursor: pointer; }
 
   #menuIcons img:first-child {
     margin-left: 85%; }
+
+  #socialMediaHeader {
+    display: none; }
 
   #heroImage img {
     margin: 5% 0 0 0%;
@@ -201,7 +311,7 @@ body {
 
   #heroText p {
     margin: 7% 0 0 65%;
-    width: 13%; }
+    width: 20%; }
 
   #buttonsHero {
     display: flex;
@@ -221,7 +331,8 @@ body {
   #copyrightsFooter h3 {
     margin-top: 4%;
     text-align: left;
-    margin-left: 4%; }
+    margin-left: 4%;
+    color: white; }
 
   #heroHeading h1 {
     margin-left: -9%;
@@ -240,9 +351,40 @@ body {
 
   #socialMediaFooter img {
     width: 1.5%;
-    padding: 1.5%; }
+    padding: 1.5%;
+    cursor: pointer; }
 
   #socialMediaFooter img:first-child {
     margin-left: 80%; } }
+@media screen and (min-width: 65.625em) {
+  #heroHeading h1 {
+    margin-left: -8%; }
+
+  #learnMore {
+    width: 11%; }
+
+  #shopNow {
+    width: 11%; } }
+@media screen and (min-width: 87.5em) {
+  #mainNav li a {
+    font-size: 1.3em; }
+
+  #heroHeading h1 {
+    margin-left: -6%; }
+
+  #learnMore {
+    width: 10%; }
+
+  #shopNow {
+    width: 10%; }
+
+  #socialMediaFooter img:first-child {
+    margin-left: 78%; }
+
+  #socialMediaFooter {
+    margin-top: -4%; }
+
+  #copyrightsFooter h3 {
+    margin-top: 2%; } }
 
 /*# sourceMappingURL=main.css.map */
