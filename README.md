@@ -24,10 +24,8 @@ Use Node and Express to generate the app; send the HTML file as your response vi
 
 * cd to the directory of your choice and hack away!
 
-## Authors
+## Author
 
-* Alec Riddick
-	* [Website](http://www.chroniclesofriddickdesign.com/)
 * Dana Marin Garcia
 
 ## License
@@ -35,7 +33,6 @@ Use Node and Express to generate the app; send the HTML file as your response vi
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
 * [README Formatting](https://guides.github.com/features/mastering-markdown/)
 * [Meyerweb CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
