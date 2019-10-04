@@ -510,3 +510,34 @@ body {
     margin-top: 2%;
   }
 }
+
+//media query desktop (1450px)
+@media screen and (min-width: 90.625em) {
+  #heroImage img {
+    margin-left: 10%;
+  }
+
+  #heroHeading h1 {
+    margin-left: -4%;
+  }
+
+  #heroText p {
+    width: 15%;
+  }
+}
+
+//media query desktop (1620px)
+@media screen and (min-width: 101.25em) {
+  #heroImage img {
+    margin-left: 5%;
+  }
+
+  #heroHeading h1 {
+    margin-left: -3%;
+    margin-top: 26%;
+  }
+
+  #heroText p {
+    width: 13%;
+  }
+}
